@@ -15,7 +15,7 @@ KOBOFORM_PUBLIC_SUBDOMAIN=${KOBOFORM_SUBDOMAIN}
 KOBOCAT_PUBLIC_SUBDOMAIN=${KOBOCAT_SUBDOMAIN}
 # The publicly-accessible subdomain for the Enketo Express web forms (e.g. enketo).
 ENKETO_EXPRESS_PUBLIC_SUBDOMAIN=${ENKETO_SUBDOMAIN}
-# See "api key" here: https://github.com/kobotoolbox/enketo-express/tree/master/config#linked-form-and-data-server.
+# See "api key" here: https://github.com/form-case/enketo-express/tree/master/config#linked-form-and-data-server.
 ENKETO_API_KEY=${ENKETO_API_KEY}
 # Keep `ENKETO_API_TOKEN` for retro-compatibility with KPI and KoBoCAT. ToDo Remove when KPI and KC read correct env variable
 ENKETO_API_TOKEN=${ENKETO_API_KEY}

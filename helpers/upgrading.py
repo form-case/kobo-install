@@ -27,7 +27,7 @@ class Upgrading:
         def _kpi_db_alias_kludge(command):
             """
             Sorry, this is not very nice. See
-            https://github.com/kobotoolbox/kobo-docker/issues/264.
+            https://github.com/form-case/kobo-docker/issues/264.
             """
             set_env = 'DATABASE_URL="${KPI_DATABASE_URL}"'
             return ['bash', '-c', f'{set_env} {command}']
@@ -90,7 +90,7 @@ class Upgrading:
             )
             CLI.framed_print(message)
             message = (
-                'For help, visit https://community.kobotoolbox.org/t/upgrading-'
+                'For help, visit https://community.form-case.org/t/upgrading-'
                 'to-separate-databases-for-kpi-and-kobocat/7202.'
             )
             CLI.colored_print(message, CLI.COLOR_WARNING)
@@ -131,7 +131,7 @@ class Upgrading:
     def new_terminology(upgraded_dict: dict) -> dict:
         """
         Updates configuration to use new `kobo-docker` terminology.
-        See: https://github.com/kobotoolbox/kobo-docker/pull/294
+        See: https://github.com/form-case/kobo-docker/pull/294
 
         Args:
             upgraded_dict (dict): Configuration values to be upgraded

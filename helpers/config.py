@@ -772,7 +772,7 @@ class Config(metaclass=Singleton):
             if not os.path.isdir(os.path.join(full_repo_path, '.git')):
                 git_command = [
                     'git', 'clone',
-                    f'https://github.com/kobotoolbox/{repo_name}',
+                    f'https://github.com/form-case/{repo_name}',
                     full_repo_path
                 ]
 

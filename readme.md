@@ -1,22 +1,22 @@
 The purpose of the script is to install KoboToolbox in minutes without messing with configuration files.
-It prompts the user to answer some questions to create configuration files automatically and to start docker containers based on [`kobo-docker`](https://github.com/kobotoolbox/kobo-docker "").
+It prompts the user to answer some questions to create configuration files automatically and to start docker containers based on [`kobo-docker`](https://github.com/form-case/kobo-docker "").
 
 ## :warning: You _must observe_ the following when upgrading:
 
-### …from any release older than [`2.022.44`](https://github.com/kobotoolbox/kobo-install/releases/tag/2.022.44) (November 2022)
+### …from any release older than [`2.022.44`](https://github.com/form-case/kobo-install/releases/tag/2.022.44) (November 2022)
 
-If you have already installed KoboToolbox between March 2019 and November 2022, you **must** complete [a manual upgrade process](https://github.com/kobotoolbox/kobo-docker/blob/master/doc/November-2022-Upgrade.md) before trying to upgrade. **If you do not, `kobo-install` will not be able to start.**
+If you have already installed KoboToolbox between March 2019 and November 2022, you **must** complete [a manual upgrade process](https://github.com/form-case/kobo-docker/blob/master/doc/November-2022-Upgrade.md) before trying to upgrade. **If you do not, `kobo-install` will not be able to start.**
 
-### …from any release older than [`2.020.18`](https://github.com/kobotoolbox/kobo-install/releases/tag/2.020.18) (May 2020)
+### …from any release older than [`2.020.18`](https://github.com/form-case/kobo-install/releases/tag/2.020.18) (May 2020)
 
-Prior to release [`2.020.18`](https://github.com/kobotoolbox/kobo-install/releases/tag/2.020.18), [KPI](https://github.com/kobotoolbox/kpi) and [KoBoCAT](https://github.com/kobotoolbox/kobocat) both shared a common Postgres database. They now each have their own. **If you are upgrading an existing single-database installation, you must follow [these instructions](https://community.kobotoolbox.org/t/upgrading-to-separate-databases-for-kpi-and-kobocat/7202)** to migrate the KPI tables to a new database and adjust your configuration appropriately.
+Prior to release [`2.020.18`](https://github.com/form-case/kobo-install/releases/tag/2.020.18), [KPI](https://github.com/form-case/kpi) and [KoBoCAT](https://github.com/form-case/kobocat) both shared a common Postgres database. They now each have their own. **If you are upgrading an existing single-database installation, you must follow [these instructions](https://community.form-case.org/t/upgrading-to-separate-databases-for-kpi-and-kobocat/7202)** to migrate the KPI tables to a new database and adjust your configuration appropriately.
 
-If you do not want to upgrade at this time, please use the [`shared-database-obsolete`](https://github.com/kobotoolbox/kobo-install/tree/shared-database-obsolete) branch instead.
+If you do not want to upgrade at this time, please use the [`shared-database-obsolete`](https://github.com/form-case/kobo-install/tree/shared-database-obsolete) branch instead.
 
 ### …installations made prior to March 2019
 
 If you have already installed KoboToolbox with `kobo-docker` prior March 2019,
-you **must** complete [a manual upgrade process](https://github.com/kobotoolbox/kobo-docker/#important-notice-when-upgrading-from-commit-5c2ef02-march-4-2019-or-earlier)
+you **must** complete [a manual upgrade process](https://github.com/form-case/kobo-docker/#important-notice-when-upgrading-from-commit-5c2ef02-march-4-2019-or-earlier)
 before using this repository. **If you do not, `kobo-install` will not be able to start.**
 
 ## Versions
@@ -142,7 +142,7 @@ User can choose between 2 types of installations:
 
 <sup>6)</sup> _WAL-E backups for PostgreSQL are only available when using AWS storage_
 
-ℹ  Intercom App ID [must now](https://github.com/kobotoolbox/kpi/pull/2285) be configured through "Per user settings" in the Django admin interface of KPI.
+ℹ  Intercom App ID [must now](https://github.com/form-case/kpi/pull/2285) be configured through "Per user settings" in the Django admin interface of KPI.
 
 ## Requirements
 
